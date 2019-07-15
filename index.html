@@ -29,14 +29,14 @@
 
         import home from './home.js'
         import detail from './detail.js'
+        import create from './create.js'
 
         const router = new VueRouter({
             mode: 'history',
             routes: [
                 { path: '/', component: home },
                 { path: '/detail', component: detail },
-                // { path: '/tambah', component: detail },
-                // { path: '/edit', component: detail }
+                { path: '/tambah', component: create }
             ]
         })
 
