@@ -12,6 +12,7 @@ export default {
     },
     data: function() { return {
         mahasiswa: {
+            id: '',
             nim: '',
             nama: '',
             angkatan: '',
@@ -19,5 +20,5 @@ export default {
             jenis_kelamin: ''
         }
     }},
-    template: '<div class="detail"><h4>Detail Mahasiswa</h4><div class="table-responsive mt-3"><table class="table table-striped"><tr><th>NIM</th><td>{{ mahasiswa.nim }}</td></tr><tr><th>Nama</th><td>{{ mahasiswa.nama }}</td></tr><tr><th>Angkatan</th><td>{{ mahasiswa.angkatan }}</td></tr><tr><th>Alamat</th><td>{{ mahasiswa.alamat }}</td></tr><tr><th>Jenis Kelamin</th><td>{{ mahasiswa.jenis_kelamin }}</td></tr></table><router-link to="/" class="btn btn-light btn-sm mt-3">Kembali</router-link></div></div>'
+    template: '<div class="detail"><h4>Detail Mahasiswa</h4><router-link :to="\'/edit?id=\'+mahasiswa.id" class="btn btn-primary btn-sm">Edit</router-link><div class="table-responsive mt-3"><table class="table table-striped"><tr><th>NIM</th><td>{{ mahasiswa.nim }}</td></tr><tr><th>Nama</th><td>{{ mahasiswa.nama }}</td></tr><tr><th>Angkatan</th><td>{{ mahasiswa.angkatan }}</td></tr><tr><th>Alamat</th><td>{{ mahasiswa.alamat }}</td></tr><tr><th>Jenis Kelamin</th><td>{{ mahasiswa.jenis_kelamin }}</td></tr></table><router-link to="/" class="btn btn-light btn-sm mt-3">Kembali</router-link></div></div>'
 }

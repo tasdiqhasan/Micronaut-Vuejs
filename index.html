@@ -24,19 +24,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue-router@3.0.7/dist/vue-router.js"></script>
-    <!-- <script src=""></script> -->
     <script type="module">
 
         import home from './home.js'
         import detail from './detail.js'
         import create from './create.js'
+        import edit from './edit.js'
 
         const router = new VueRouter({
             mode: 'history',
             routes: [
                 { path: '/', component: home },
                 { path: '/detail', component: detail },
-                { path: '/tambah', component: create }
+                { path: '/tambah', component: create },
+                { path: '/edit', component: edit }
             ]
         })
 
